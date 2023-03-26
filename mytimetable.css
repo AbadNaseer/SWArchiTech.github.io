@@ -1,0 +1,86 @@
+.add-row, .add-col , .select-agenda{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+button{
+    width: auto;
+    height: 30px;
+}
+select{
+    height: 30px;
+}
+
+table{
+    border-spacing: 20px;
+}
+
+th ,td{
+    border: 1px solid black;
+}
+
+.slotsRow td{
+    font-weight: bold;
+}
+
+.time-table-head{
+    font-size: 100;
+}
+th,td{
+    padding: 8px;
+    
+}
+
+.hide-class{
+    display: none;
+}
+.show-class{
+    display: block;
+}
+
+
+
+td:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    background-color: rgb(111, 121, 121);
+
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Roboto Slab', 'serif';
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+.nav-bar{
+    display: flex;
+    color: black;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(111, 121, 121);
+    column-gap: 10px;
+    justify-content: left;
+
+}

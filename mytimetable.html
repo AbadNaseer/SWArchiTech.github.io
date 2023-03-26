@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="mytimetable.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="mytimetable.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="nav-bar">
+            <h2>Abad Naseer</h2>
+            <h3><a href="index.html">Portfolio</a></h3>
+            <h3><a href="mytimetable.html">My Time Table</a></h3>
+        </div>
+
+    </header>
+
+    <div class="timeTable-section">
+        <h1>Welcome to My Time Table</h1>
+
+        <div>
+            <h3>Add Day</h3>
+            <div class="add-row">
+                <select id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tusday">Tusday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+                <button onclick="addRow()">Add</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Add Slot</h3>
+            <div class="add-col">
+                <select id="slot">
+                    <option value="T-830-1000">8:30-10:00</option>
+                    <option value="T-1000-1130">10:00-11:30</option>
+                    <option value="T-1130-1200">11:30-12:00</option>
+                    <option value="T-1200-0130">12:00-01:30</option>
+                    <option value="T-0130-300">01:30-3:00</option>
+                    <option value="T-0300-430">03:00-4:30</option>
+                </select>
+                <button onclick="addCol()">Add</button>
+
+            </div>
+        </div>
+
+
+        <div>
+            <h3>Add Agenda</h3>
+            <div class="select-agenda">
+                <select id="select-day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tusday">Tusday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+
+                <select id="select-slot">
+                    <option value="T-830-1000">8:30-10:00</option>
+                    <option value="T-1000-1130">10:00-11:30</option>
+                    <option value="T-1130-1200">11:30-12:00</option>
+                    <option value="T-1200-0130">12:00-01:30</option>
+                    <option value="T-0130-300">01:30-3:00</option>
+                    <option value="T-0300-430">03:00-4:30</option>
+                </select>
+                <input type="text" id="cell-text" />
+                <button onclick="addAgenda()">Add Agenda</button>
+            </div>
+        </div>
+
+
+        <div id="timeTable-div">
+            <table id="table">
+
+            </table>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
