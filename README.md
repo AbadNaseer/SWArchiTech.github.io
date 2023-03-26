@@ -1,4 +1,4 @@
-# Web-Engineering-Assignment-1
+# SWArchiTech.github.io
 My Portfolio and Timetable
 This repository contains a few web documents created using HTML and CSS. The web documents include:
 
